@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.awired.operating.system.specific</groupId>
+	<artifactId>operating-system-specific</artifactId>
+	<name>Operating System specific</name>
+	<description></description>
+	<packaging>jar</packaging>
+	<version>0.5-SNAPSHOT</version>
+
+	<parent>
+		<groupId>net.awired.parent</groupId>
+		<artifactId>parent-java</artifactId>
+		<version>1.16</version>
+	</parent>
+
+	<scm>
+		<connection>scm:git:git://github.com/awired/operating-system-specific.git</connection>
+		<developerConnection>scm:git:git@github.com:awired/operating-system-specific.git</developerConnection>
+		<url>https://github.com/awired/logback-prettier</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.awired.ajsl</groupId>
+			<artifactId>ajsl-core</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
