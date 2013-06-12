@@ -1,4 +1,4 @@
-package net.awired.ajsl.os.windows.registry;
+package net.awired.operating.system.specific.windows.registry;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;

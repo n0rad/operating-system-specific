@@ -1,4 +1,4 @@
-package net.awired.ajsl.os.windows.util;
+package net.awired.operating.system.specific.windows.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class WindowsUtil {
         // get output from exec
         List<String> result = Exec.runExec("tasklist.exe /fo csv /nh");
         // create process list
-        List<Process> processes = new ArrayList<Process>(result.size());
+        List<Process> processes = new ArrayList<>(result.size());
 
         for (String line : result) {
             if (!line.trim().equals("")) {

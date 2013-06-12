@@ -1,20 +1,20 @@
-package net.awired.ajsl.os;
+package net.awired.operating.system.specific;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import net.awired.ajsl.core.lang.StringUtils;
-import net.awired.ajsl.core.lang.reflect.ReflectTool;
-import net.awired.ajsl.os.linux.XdgDirectory;
-import net.awired.ajsl.os.system.Os;
-import net.awired.ajsl.os.system.OsLinux;
-import net.awired.ajsl.os.system.OsMac;
-import net.awired.ajsl.os.system.OsSolaris;
-import net.awired.ajsl.os.system.OsWindows;
+import net.awired.ajsl.core.lang.reflect.ReflectTools;
+import net.awired.operating.system.specific.linux.XdgDirectory;
+import net.awired.operating.system.specific.system.Os;
+import net.awired.operating.system.specific.system.OsLinux;
+import net.awired.operating.system.specific.system.OsMac;
+import net.awired.operating.system.specific.system.OsSolaris;
+import net.awired.operating.system.specific.system.OsWindows;
+import org.apache.commons.lang3.text.WordUtils;
 
 public class ApplicationHomeFactory {
 
-    private static final List<Class<? extends Os>> APPLICATION_HOMES = new ArrayList<Class<? extends Os>>();
+    private static final List<Class<? extends Os>> APPLICATION_HOMES = new ArrayList<>();
 
     public class ApplicationHomeLinux implements ApplicationHome, OsLinux, OsSolaris {
         @Override
@@ -26,7 +26,7 @@ public class ApplicationHomeFactory {
     public class ApplicationHomeMac implements ApplicationHome, OsMac {
         @Override
         public File getFolder(String applicationName) {
-            return new File(System.getProperty("user.home") + "/Library/" + StringUtils.ucFirst(applicationName));
+            return new File(System.getProperty("user.home") + "/Library/" + WordUtils.capitalize(applicationName));
         }
     }
 
@@ -34,7 +34,7 @@ public class ApplicationHomeFactory {
         @Override
         public File getFolder(String applicationName) {
             return new File(System.getProperty("user.home") + "/AppData/Local/"
-                    + StringUtils.ucFirst(applicationName));
+                    + WordUtils.capitalize(applicationName));
         }
     }
 
@@ -48,7 +48,7 @@ public class ApplicationHomeFactory {
         OsManager<?> osManager = OsManager.getInstance();
         Class<?> applicationHome = osManager.getOsClassInArray(APPLICATION_HOMES);
         try {
-            return (ApplicationHome) ReflectTool.createInstance(applicationHome);
+            return (ApplicationHome) ReflectTools.createInstance(applicationHome);
         } catch (Exception e) {
             throw new IllegalStateException("Cannot instanciate ApplicationHome implementation", e);
         }

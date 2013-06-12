@@ -1,4 +1,4 @@
-package net.awired.ajsl.os.windows.util;
+package net.awired.operating.system.specific.windows.util;
 
 public class Process {
 	private String name;

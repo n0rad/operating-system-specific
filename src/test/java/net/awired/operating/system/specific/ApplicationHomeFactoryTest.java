@@ -1,7 +1,9 @@
-package net.awired.ajsl.os;
+package net.awired.operating.system.specific;
 
 import java.io.File;
 import junit.framework.Assert;
+import net.awired.operating.system.specific.ApplicationHome;
+import net.awired.operating.system.specific.ApplicationHomeFactory;
 import org.junit.Test;
 
 public class ApplicationHomeFactoryTest {

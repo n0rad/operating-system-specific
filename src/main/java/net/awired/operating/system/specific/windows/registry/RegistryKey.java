@@ -9,15 +9,14 @@
  * @creation 22 oct. 2008
  * @version 1.0
  */
-package net.awired.ajsl.os.windows.registry;
+package net.awired.operating.system.specific.windows.registry;
 
 public class RegistryKey {
 
-    
     //TODO: manage short version of keys
     public static final String KEY_CU = "HKEY_CURRENT_USER";
     public static final String KEY_LM = "HKEY_LOCAL_MACHINE";
-    
+
     private String key;
 
     public RegistryKey(String key) {
@@ -34,6 +33,7 @@ public class RegistryKey {
         this.key = key;
     }
 
+    @Override
     public String toString() {
         return key;
     }

@@ -1,12 +1,12 @@
-package net.awired.ajsl.os;
+package net.awired.operating.system.specific;
 
 import java.util.Arrays;
 import java.util.List;
-import net.awired.ajsl.os.system.Os;
-import net.awired.ajsl.os.system.OsLinux;
-import net.awired.ajsl.os.system.OsMac;
-import net.awired.ajsl.os.system.OsSolaris;
-import net.awired.ajsl.os.system.OsWindows;
+import net.awired.operating.system.specific.system.Os;
+import net.awired.operating.system.specific.system.OsLinux;
+import net.awired.operating.system.specific.system.OsMac;
+import net.awired.operating.system.specific.system.OsSolaris;
+import net.awired.operating.system.specific.system.OsWindows;
 
 public enum OsTypeList implements OsType<OsTypeList> {
 

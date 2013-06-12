@@ -9,7 +9,7 @@
  * @creation 22 oct. 2008
  * @version 1.0
  */
-package net.awired.ajsl.os.windows.registry;
+package net.awired.operating.system.specific.windows.registry;
 
 public enum DataType {
 

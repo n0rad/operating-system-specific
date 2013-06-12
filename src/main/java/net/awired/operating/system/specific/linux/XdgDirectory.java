@@ -1,4 +1,4 @@
-package net.awired.ajsl.os.linux;
+package net.awired.operating.system.specific.linux;
 
 import java.io.File;
 

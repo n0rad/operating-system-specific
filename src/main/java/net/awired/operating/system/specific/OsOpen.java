@@ -1,4 +1,4 @@
-package net.awired.ajsl.os;
+package net.awired.operating.system.specific;
 
 public class OsOpen {
     //    if (isLinux())

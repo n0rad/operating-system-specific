@@ -1,7 +1,7 @@
-package net.awired.ajsl.os;
+package net.awired.operating.system.specific;
 
 import java.util.List;
-import net.awired.ajsl.os.system.Os;
+import net.awired.operating.system.specific.system.Os;
 
 public class OsManager<T extends OsType<?>> {
 
