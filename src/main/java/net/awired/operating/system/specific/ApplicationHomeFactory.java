@@ -19,7 +19,7 @@ package net.awired.operating.system.specific;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import net.awired.ajsl.core.lang.reflect.ReflectTools;
+import net.awired.core.lang.reflect.ReflectTools;
 import net.awired.operating.system.specific.linux.XdgDirectory;
 import net.awired.operating.system.specific.system.Os;
 import net.awired.operating.system.specific.system.OsLinux;

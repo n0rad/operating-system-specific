@@ -18,7 +18,7 @@ package net.awired.operating.system.specific.windows.util;
 
 import java.util.ArrayList;
 import java.util.List;
-import net.awired.ajsl.core.lang.Exec;
+import net.awired.core.lang.Exec;
 
 public class WindowsUtil {
     public static void closeSession() {
