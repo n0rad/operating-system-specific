@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.norad.operating.system.specific</groupId>
 	<artifactId>operating-system-specific</artifactId>
 	<name>Operating System specific</name>
 	<description>Lib to support operating system specific element like application home folder, open files, execute command, access registry db, ...</description>
 	<packaging>jar</packaging>
-	<version>0.5-SNAPSHOT</version>
+	<version>0.5</version>
 
 	<parent>
 		<groupId>fr.norad.parent</groupId>
@@ -19,7 +18,7 @@
 		<connection>scm:git:git://github.com/n0rad/operating-system-specific.git</connection>
 		<developerConnection>scm:git:git@github.com:n0rad/operating-system-specific.git</developerConnection>
 		<url>https://github.com/n0rad/operating-system-specific</url>
-		<tag>HEAD</tag>
+		<tag>operating-system-specific-0.5</tag>
 	</scm>
 
 	<dependencies>
